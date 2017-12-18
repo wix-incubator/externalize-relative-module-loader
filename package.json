@@ -1,0 +1,24 @@
+{
+  "name": "externalize-relative-module-loader",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Roy Miloh <roymi@wix.com>",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "webpack": "^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "~4.1.0",
+    "jest": "~22.0.0",
+    "lodash": "~4.17.4",
+    "memory-fs": "~0.4.1",
+    "mocha": "~4.0.1",
+    "webpack": "~3.10.0"
+  }
+}
