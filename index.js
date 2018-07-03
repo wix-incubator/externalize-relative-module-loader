@@ -6,5 +6,5 @@ module.exports = function (content) {
 };
 
 function extractModule(path) {
-  return path.split('/').pop();
+  return path.split(/[\\/]/).pop();
 }
