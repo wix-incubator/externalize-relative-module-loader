@@ -11,7 +11,7 @@ and app (that uses that lib) strives to put this dependency in its [`externals`]
 ## Install
 
 ```
-npm install --save @wix/externalize-relative-module-loader
+npm install --save externalize-relative-module-loader
 ```
 
 ## Usage
