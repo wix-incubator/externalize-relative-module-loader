@@ -27,5 +27,8 @@
     "memory-fs": "~0.4.1",
     "webpack": "~3.10.0",
     "wnpm-ci": "~7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
