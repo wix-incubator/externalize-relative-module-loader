@@ -6,7 +6,13 @@ This loader aims to solve cases where a library makes an import from a specific 
 import map from 'lodash/map';
 ```
 
-and strives to put this dependency in externals in its bundle.
+and app (that uses that lib) strives to put this dependency in its [`externals`](https://webpack.js.org/configuration/externals/).
+
+## Install
+
+```
+npm install --save @wix/externalize-relative-module-loader
+```
 
 ## Usage
 
