@@ -1,5 +1,5 @@
 {
-  "name": "@wix/externalize-relative-module-loader",
+  "name": "externalize-relative-module-loader",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Roy Miloh <roymi@wix.com>",
