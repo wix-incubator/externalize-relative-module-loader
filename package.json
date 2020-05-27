@@ -21,10 +21,13 @@
   "peerDependencies": {
     "webpack": "^3.0.0 || ^4.0.0"
   },
+  "dependencies": {
+    "lodash": "~4.17.15"
+  },
   "devDependencies": {
     "jest": "~22.0.0",
-    "lodash": "~4.17.4",
     "memory-fs": "~0.4.1",
+    "lodash.camelcase": "~4.3.0",
     "webpack": "~3.10.0",
     "wnpm-ci": "~7.0.0"
   },
