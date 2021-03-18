@@ -2,15 +2,22 @@ const path = require('path');
 const webpack = require('./helpers/compiler');
 
 describe('Loader', () => {
-  it('should transform imports', async () => {
-    const config = {
-      loader: {
-        test: path.resolve('node_modules/lodash')
-      },
-      externals: ['lodash']
-    };
+  const config = {
+    loader: {
+      test: /[\\/]node_modules[\\/]lodash/
+    },
+    externals: ['lodash']
+  };
 
-    const stats = await webpack('lodash.js', config);
+  it('should transform imports for slashed imports', async () => {
+    const stats = await webpack('with-slash.js', config);
+    const {source} = stats.toJson().modules[1];
+
+    expect(source).toMatchSnapshot();
+  });
+
+  it('should transform imports for slashed imports', async () => {
+    const stats = await webpack('with-dot.js', config);
     const {source} = stats.toJson().modules[1];
 
     expect(source).toMatchSnapshot();
